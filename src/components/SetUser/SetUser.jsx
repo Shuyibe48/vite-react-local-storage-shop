@@ -1,11 +1,12 @@
 import React from 'react';
+import { setLocalStorage } from '../../utilities/SetLocalStorage/SetLocalStorage';
 import './SetUser.css'
 
 const SetUser = (props) => {
     const {name, id, email} = props.user
 
     const userId = id => {
-        console.log(id)
+        setLocalStorage(id)
     }
 
     return (
